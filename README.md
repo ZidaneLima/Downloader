@@ -1,3 +1,4 @@
+
 # Downloader de Lives do YouTube
 
 Este projeto é um utilitário em Python, ideal para baixar vídeo aulas ou transmissões longas (lives).
@@ -12,9 +13,7 @@ Certifique-se de que as seguintes ferramentas estão instaladas no seu sistema L
 - **ffmpeg**
 - **yt-dlp**
 
-
 ---
-
 
 ## INSTALAÇÃO NO LINUX (via terminal)
 
@@ -35,14 +34,13 @@ uv pip install -r requirements.txt
 python src/main.py
 uv run src/main.py  (caso use o UV)
 
-
 ---
-
 
 ## INSTALAÇÃO NO WINDOWS
 
 #### Baixe e instale o Python 3.10 ou superior pelo site oficial:
-https://www.python.org/downloads/  (Durante a instalação, marque a opção "Add Python to PATH" antes de clicar em "Install Now")
+https://www.python.org/downloads/
+##### - Durante a instalação, marque a opção "Add Python to PATH" antes de clicar em "Install Now"
 
 #### Instale o yt-dlp  (cmd ou PowerShell)
 pip install yt-dlp
@@ -60,21 +58,17 @@ choco install ffmpeg
 python src/main.py
 uv run src/main.py  (caso use o UV)
 
-
 ---
-
 
 ## ENFRENTANDO PROBLEMAS
 
-### yt-dlp ou ffmpeg não encontrado?
-- Isso significa que eles não estam no seu PATH.
+### yt-dlp ou ffmpeg não encontrado?  Isso significa que eles não estam no seu PATH.
 
 #### No Linux, execute 'which yt-dlp' e 'which ffmpeg' para ver onde está instalado e use esse caminho no código.
-YT_DLP_PATH = "/usr/local/bin/yt-dlp"
-FFMPEG_PATH = "/usr/bin/ffmpeg"
+- YT_DLP_PATH = "/usr/local/bin/yt-dlp" 
+- FFMPEG_PATH = "/usr/bin/ffmpeg"
 
 #### No Windows, execute no PowerShell 'Get-Command yt-dlp' 'Get-Command ffmpeg' para ver onde está instalado e use esse caminho no código.
-YT_DLP_PATH = r"C:\Users\SeuUsuario\AppData\Roaming\Python\Python310\Scripts\yt-dlp.exe"
-FFMPEG_PATH = r"C:\ProgramData\chocolatey\bin\ffmpeg.exe"
-
+- YT_DLP_PATH = r"C:\Users\SeuUsuario\AppData\Roaming\Python\Python310\Scripts\yt-dlp.exe"
+- FFMPEG_PATH = r"C:\ProgramData\chocolatey\bin\ffmpeg.exe"
 
