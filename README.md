@@ -18,7 +18,9 @@ Certifique-se de que as seguintes ferramentas estão instaladas no seu sistema:
 
 #### Instalar o Python  (verificar versão, se já estiver instalado)
 *python3 --version*
+
 **ou para instalar**
+
 *sudo apt-get install python*
 
 #### Instalar as ferramentas
@@ -69,3 +71,4 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocola
 
 - *YT_DLP_PATH = r"C:\Users\SeuUsuario\AppData\Roaming\Python\Python310\Scripts\yt-dlp.exe"*
 - *FFMPEG_PATH = r"C:\ProgramData\chocolatey\bin\ffmpeg.exe"*
+
