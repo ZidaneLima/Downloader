@@ -1,0 +1,23 @@
+# Python pastas
+*.py[oc]
+wheels/
+
+# Ignorar ambientes virtuais
+.venv/
+venv/
+
+# Ignorar caches do Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignorar lock temporário
+*.lock
+
+# Ignorar pastas de build e distribuição
+build/
+dist/
+*.egg-info/
+
+# Ignorar a pasta de downloads
+Download/
