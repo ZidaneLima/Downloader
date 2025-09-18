@@ -1,15 +1,16 @@
 import subprocess
 
+
 def down(url: str):
 
     ffmpeg_path = "/usr/bin/ffmpeg"
     yt_dlp_path = "/usr/local/bin/yt-dlp"
 
-    output_template = "Download/%(title)s.%(ext)s"
+    output_template = "Download/%(title)s.%(ext)s"  # "Download/%(id)s.%(ext)s"
 
     command = [
         yt_dlp_path,
-        "-f", "bv*+ba/best",
+        "-f", "bv+ba/best",  # "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"
         "--merge-output-format", "mp4",
         "--ffmpeg-location", ffmpeg_path,
         "-o", output_template, url]
