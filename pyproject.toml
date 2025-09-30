@@ -4,4 +4,4 @@ version = "2.0.0"
 description = "Download de vídeos do YouTube"
 readme = "README.md"
 requires-python = ">=3.13.5"
-dependencies = []
+dependencies = ["yt-dlp", "ffmpeg"]
