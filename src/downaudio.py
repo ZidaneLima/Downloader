@@ -1,7 +1,9 @@
 import subprocess
-from utils import ffmpeg_path, yt_dlp_path, output_template
+from utils import ffmpeg_path, yt_dlp_path, get_output_template
 
 def downaudio (url: str):
+
+    output_template = get_output_template(url)
 
     command = [
         yt_dlp_path,
@@ -12,7 +14,7 @@ def downaudio (url: str):
         "--ffmpeg-location", ffmpeg_path,
         "-o", output_template, url]
 
-    print("\n Baixando o áudio.. Por favor, aguarde!\n")
+    print("\n Baixando o áudio/música.. Por favor, aguarde!\n")
 
     try:
         subprocess.run(command, check=True)
